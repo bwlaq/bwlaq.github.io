@@ -1,3 +1,62 @@
 .top-navbar {
-    color:aqua;
+  display: flex;
+  flex-grow: 18;
+  height: 100px;
+  margin: auto;
+  background-color: burlywood;
+  width: 1000px;
 }
+.top-navbar__name {
+  flex-grow: 8;
+}
+.top-navbar__button {
+  flex-grow: 1;
+}
+
+.content {
+  margin: auto;
+  width: 1000px;
+}
+.content__header {
+  background-color: aquamarine;
+  display: flex;
+}
+.content__body {
+  display: flex;
+}
+.content__body__left {
+  width: 50%;
+  padding: 10px;
+}
+.content__body__right {
+  width: auto;
+  padding: 10px;
+  display: flex;
+}
+
+.name-card {
+  margin: auto;
+  text-align: center;
+}
+
+.table__header {
+  width: 50%;
+}
+.table__content {
+  width: auto;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.img__photo {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 300px;
+  background-color: white;
+  box-shadow: 2px 5px 5px grey;
+}
+
+/*# sourceMappingURL=styles.css.map */
