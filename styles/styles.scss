@@ -1,52 +1,89 @@
-.top-navbar {    
+$shadow-color: #cccccc;
+$primary-color: #69f0ae;
+$primary-dark: #2bbd7e;
+body {
+    background-color: #f2f2f2;
+}
+.inline-color{
+    color:$primary-dark;
+}
+.top-navbar {
     display: flex;
     flex-grow: 18;
-    height: 100px;
     margin: auto;
-    background-color:burlywood;
-    width:1000px;
-    &__name{
-        flex-grow:8;
+    width: 1000px;
+    padding-bottom: 50px;
+
+    &__name {
+        flex-grow: 8;
     }
+
     &__button {
         flex-grow: 1;
+        color: #999999;
+        transition: 0.5s;
+        transition-property: color, width;
+        text-align: center;
+
+        &:hover {
+            color: #4d4d4d;
+
+        }
     }
 }
 .content {
     margin: auto;
     width: 1000px;
-    
+    box-shadow: 5px 15px 20px #cccccc;
+
     &__header {
-        background-color: aquamarine;
-        display:flex;
+        background-color: $primary-dark;
+        display: flex;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+        height: 300px;
     }
 
     &__body {
+        background-color: white;
         display: flex;
+        padding: 50px;
+
+        height: 200px;
+
 
         &__left {
             width: 50%;
             padding: 10px;
+            border-bottom-left-radius: 8px;
         }
 
         &__right {
             width: auto;
             padding: 10px;
-            display:flex;
+            display: flex;
+            border-bottom-right-radius: 8px;
         }
     }
 }
 .name-card{
+    color:white;
     margin:auto;
     text-align:center;
 }
 .table {
     &__header {
         width: 50%;
+
     }
 
     &__content {
         width: auto;
+
+    }
+    &__item{
+        margin:8px;
+
     }
 }
 ul {
@@ -54,10 +91,36 @@ ul {
 }
 .img__photo {
     border: 1px solid #ddd;
-    border-radius: 4px;
-    padding: 5px;
+    border-radius: 2px;
+    padding: 2px;
     width: 300px;
     background-color: white;
-    box-shadow: 2px 5px 5px grey;
+    box-shadow: 0px 5px 10px $shadow-color;
+    margin-left: 50px;
+    margin-top: 50px;
+    transition: 0.7s;
+    transition-property: box-shadow, transform;
+
+    &:hover {
+        transform: translatey(-15px);
+        box-shadow: 0px 20px 25px $shadow-color;
+    }
 }
+.social-media {
+    display: flex;
+    justify-content: center;
+}
+.social-media__img{
+    max-width:22px;
+    padding: 10px;
+    
+ }
+.social-media-button {
+    width: 44px;
+    border-radius: 88px;
+    background-color: white;
+    box-shadow: 1px 1px 1px $primary-color;
+    margin: 5px;
+}
+
 
