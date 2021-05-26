@@ -1,0 +1,14 @@
+name: Continuous Intergration
+on:
+  push:
+    branches: [master]
+  pull_request:
+    branches: [master]
+jobs:
+  Runner:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [12, 14]
+        mongodb-veriosn: [4.2]
+      steps:

@@ -1,10 +1,12 @@
 ﻿<!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8">
     <title>Jeng-han Lu</title>
     <link rel="stylesheet" href="styles/styles.css" type="text/css">
 </head>
+
 <body>
 
     <div class="top-navbar">
@@ -12,35 +14,37 @@
 
         <a class="top-navbar__button">Home</a>
         <a class="top-navbar__button">Resume</a>
-        <a class="top-navbar__button">Services</a>
-        <a class="top-navbar__button">Blog</a>
+        <a class="top-navbar__button">Projects</a>
         <a class="top-navbar__button">Contact</a>
     </div>
-    <div id="home">
+    <div class="home">
         <div class="content">
-            <div class="content__header" id="home-header">
+            <div class="home__header">
                 <div>
                     <img src="images/photo.png" alt="My photo" class="img__photo" />
                 </div>
-                <div class="content-title">
+                <div class="content__title">
                     <h1>Jeng-han Lu (Norman)</h1>
                     <h2>Full stack developer</h2>
                     <div class="social-media">
-                        <div class="social-media-button"> <a href="#"><img src="images/GitHub-Mark-32px.png" alt="Alternate Text" class="social-media__img" /></a></div>
-                        <div class="social-media-button"><a href="#"><img src="images/LI-In-Bug.png" alt="Alternate Text" class="social-media__img" /></a></div>
+                        <div class="social-media-button"> <a href="#"><img src="images/GitHub-Mark-32px.png"
+                                    alt="Alternate Text" class="social-media__img" /></a></div>
+                        <div class="social-media-button"><a href="#"><img src="images/LI-In-Bug.png"
+                                    alt="Alternate Text" class="social-media__img" /></a></div>
                     </div>
                 </div>
 
             </div>
             <div class="content__body">
-                <div class="content__body__left">
+                <div class="home__content__body__left">
                     <h4>About <span class="inline-color">Me</span></h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean fermentum ullamcorper sem, at placerat dolor volutpat ac. Duis nulla enim, condimentum nec ultricies.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean fermentum ullamcorper sem, at
+                        placerat dolor volutpat ac. Duis nulla enim, condimentum nec ultricies.</p>
                 </div>
                 <div class="content__body__right">
                     <div class="table__header">
                         <b>
-                            <ul>
+                            <ul class="home--ul">
                                 <li class="table__item">Residence</li>
                                 <li class="table__item">e-mail</li>
                                 <li class="table__item">Mobile</li>
@@ -48,7 +52,7 @@
                         </b>
                     </div>
                     <div class="table__content">
-                        <ul>
+                        <ul class="home--ul">
                             <li class="table__item">Woolloongabba, 4102</li>
                             <li class="table__item">jeng.han.lu@gmail.com</li>
                             <li class="table__item">0421 845 816</li>
@@ -78,8 +82,8 @@
     <div id="resume">
         <div class="content">
             <div id="resume-header" class="content__header">
-                <h1 class="content-title">Resume</h1>
-            </div>        
+                <h1 class="content__title">Resume</h1>
+            </div>
             <div id="resume-body" class="content__body">
                 <div class="content__body__left">
                     <div>
@@ -87,12 +91,14 @@
                         <div class="timeline">
                             <div class="timeline__element">
                                 <h3 class="timeline__element__title">Master of Information Technology</h3>
-                                <p class="timeline__element__sub-title"><span class="timeline__inline-color">2019</span> Queensland University of Technology</p>
+                                <p class="timeline__element__sub-title"><span class="timeline__inline-color">2019</span>
+                                    Queensland University of Technology</p>
                                 <p class="timeline__element__detail">Major in Computer Science</p>
                             </div>
                             <div class="timeline__element">
                                 <h3 class="timeline__element__title">Bachelor of Science</h3>
-                                <p class="timeline__element__sub-title"><span class="timeline__inline-color">2011</span> National Chung Hsing University, Taiwan</p>
+                                <p class="timeline__element__sub-title"><span class="timeline__inline-color">2011</span>
+                                    National Chung Hsing University, Taiwan</p>
                                 <p class="timeline__element__detail">Major in Food Science</p>
                             </div>
                         </div>
@@ -108,8 +114,21 @@
                 </div>
                 <div class="content__body__right">
                     <div>
-                        <h3>Experience</h3>
-                        <div class="timeline"></div>
+                        <h2>Experience</h2>
+                        <div class="timeline">
+                            <div class="timeline__element">
+                                <h3 class="timeline__element__title">Innovation Intern</h3>
+                                <p class="timeline__element__sub-title"><span class="timeline__inline-color">2019</span>
+                                    Aesculap AG, Germany</p>
+
+                                <ul class="timeline__element__detail">
+                                    <li>VR development</li>
+                                    <li>iOS testing</li>
+                                    <li>Arduino development</li>
+                                </ul>
+
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -117,6 +136,19 @@
         </div>
 
     </div>
+    <div id="projects">
+        <div class="content">
+            <div class="content__header">
+                <h1 class="content__title">Projects</h1>
+            </div>
+            <div class="content__body">
+                <div class="project--element">
+                    <a><img src="images/Mona-pizza.png" alt="Mona-pizza"></img></a>
+                </div>
+            </div>
+        </div>
+    </div>
 
 </body>
+
 </html>
